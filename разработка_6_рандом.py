@@ -5,6 +5,10 @@ print('случайное число от 0 до 1:', random.random()) #случ
 city_list = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Philadelphia']
 print("Выбор случайного города из списка - ", random.choice(city_list))
 
+sequence_num = list( range(1, 1001))
+x=random.choice(sequence_num)
+print("Выбор случайного числа от 1 до 1000:", x)
+
 print("Генерация случайного числа в пределах заданного промежутка", random.randrange(1, 5, 1))# Генерация случайного числа в пределах заданного промежутке от 1 до 4 с шагом 1
 print("Генерация случайного числа в пределах заданного промежутка", random.randrange(1, 5, 1))
 print("Генерация случайного числа в пределах заданного промежутка", random.randrange(1, 5, 1))

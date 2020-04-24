@@ -4,9 +4,25 @@
 import random
 def IsPrimeNumber(number):
    divisor = 2
-   while number % divisor!= 0:
-       divisor += 1
-   return divisor == number
+   # while number > 0:
+      # divisor += 1
+       if number % divisor != 0:
+           print('дошли до цифры ', divisor, ' - оно НЕ является  первым делителем ')
+           divisor += 1
+           if number % divisor == 0:
+               print('Число ', divisor, ' -  - оно является  первым делителем ')
+       else: ('Число ', number, ' - НЕпростое, т.к. не имеет делитель'  , divisor, 'кроме еденицы и самого себя ')
+   # return divisor == number , print('перебрали все цифры до первого делителя ', divisor, 'не нашлось ни одного делителя' )
+
+   # divisor = 2
+   # while number % divisor!= 0:
+   #     divisor += 1
+   #     if number % divisor == 0:
+   #         print('дошли до цифры ', divisor, ' - оно является  первым делителем ')
+   #         if number == 1 or number==divisor:
+   #             print('Число ', number, ' - простое, т.к. не имеет делителей , кроме еденицы и самого себя ')
+   #     else: ('Число ', number, ' - НЕпростое, т.к. не имеет делитель'  , divisor, 'кроме еденицы и самого себя ')
+   # return divisor == number , print('перебрали все цифры до ', number, 'не нашлось ни одного делителя' )
 # global sequence_num
 # диапазон натуральных числе от 1 до 1000
 sequence_num =list( range(1, 1001))
