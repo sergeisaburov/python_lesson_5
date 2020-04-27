@@ -23,6 +23,7 @@ def Proverka_na_prostoe(y):
 Proverka_na_prostoe(x)
 # 2) выводит список всех делителей числа;
 def Vivod_vseh_del(y):
+    global delitely
     delitely = []
    # print('Вывод всех делителей числа:', end=  '  ')
     print('Вывод всех делителей числа (1 способ):', end=  '  ')
@@ -32,7 +33,7 @@ def Vivod_vseh_del(y):
            # print(i, end=',')
     print(type(delitely),delitely)
 Vivod_vseh_del(x)
-# print('Вывод всех делителей числа (1 ):',type(delitely), delitely)
+print('Вывод всех делителей числа (глобальная переменная):',type(delitely), delitely)
 def Vivod_vseh_del2(y):
     print('Вывод всех делителей числа(2 способ):', end=  '  ')
     for i in range (y-1 , 1 , -1):
