@@ -5,8 +5,8 @@ print(type(spisok_list),spisok_list)
 x=random.choice(spisok_list)
 # x = random.randrange(1, 1001, 1)
 print('Проверяемое чило из списка:', x)
-x=411
-print('Проверяемое чило из списка:', x)
+# x=411
+# print('Проверяемое чило из списка:', x)
 # 1) проверка числа на простоту (простые числа - это те числа у которых делители единица и они сами);
 def Proverka_na_prostoe(y):
     j=2
