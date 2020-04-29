@@ -43,6 +43,7 @@ Vivod_vseh_del2(x)
 
 #3) выводит самый большой простой делитель числа.
 def Vivod_bolsh_prost_del(y):
+    global naib_delitel
     naib_delitel = []
     for i in range(y - 1, 1, -1):
         shet = 0  # Счётчик
@@ -56,6 +57,8 @@ def Vivod_bolsh_prost_del(y):
             if (shet == 0):  # Если делителей не было найдено, выводим
                 naib_delitel.append(i)
                 print('Наибольший ПРОСТОЙ делитель(так как перебор идет от большего к меньшему и выводим первый результат):',type(naib_delitel), naib_delitel)
-                return
+                return naib_delitel
 
 Vivod_bolsh_prost_del(x)
+
+print('Глобальный Наибольший ПРОСТОЙ делитель(так как перебор идет от большего к меньшему и выводим первый результат):',type(naib_delitel), naib_delitel)
